@@ -9,27 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ConnectActivity"></activity>
-        <activity android:name=".DescribeActivity" />
-        <!--<activity android:name=".ProfilePicture" />-->
-       <activity android:name=".PasswordActivity" />
-        <activity android:name=".CodeActivity" />
-       <activity android:name=".SignUpConfirm"/>
-        <activity android:name=".HelpCenterACtivity" />
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".FirstActivity" />
         <activity
-            android:name=".DashBoardActivity"
-            android:label="@string/title_activity_dash_board"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ProfilePicture">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+          <activity
+            android:name=".SplashActivity"
+            android:label="@string/title_activity_dash_board"></activity>
+
+        <activity android:name=".ConnectActivity" />
+        <activity android:name=".DescribeActivity" />
+        <activity android:name=".ProfilePicture" />
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".CodeActivity" />
+        <activity android:name=".SignUpConfirm" />
+        <activity android:name=".HelpCenterACtivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".FirstActivity" />
     </application>
 
 </manifest>
