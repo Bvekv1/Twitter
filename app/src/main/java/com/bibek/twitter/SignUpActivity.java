@@ -2,6 +2,7 @@ package com.bibek.twitter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -13,8 +14,8 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class SignUpActivity extends AppCompatActivity {
-    private TextInputEditText etName, etEmail;
-    private Button btnNext;
+     TextInputEditText etName, etEmail;
+     Button btnCheck;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,33 +23,38 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
         etName = findViewById(R.id.etName);
         etEmail = findViewById(R.id.etEmail);
-        btnNext = findViewById(R.id.btnNext);
-
-
-        etName.addTextChangedListener(emptyTextWatcher );
-        etEmail.addTextChangedListener(emptyTextWatcher );
+        btnCheck = findViewById(R.id.btnCheck);
+//        etName.addTextChangedListener(emptyTextWatcher );
+//        etEmail.addTextChangedListener(emptyTextWatcher );
+        btnCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignUpActivity.this,SignUpConfirm.class);
+                 startActivity(intent);
+            }
+        });
     }
-    private TextWatcher emptyTextWatcher = new TextWatcher() {
-        @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-
-        }
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int before, int count) {
-            String name = etName.getText().toString().trim();
-            String email = etEmail.getText().toString().trim();
-            btnNext.setEnabled(!name.isEmpty() && !email.isEmpty());
-
-
-
-        }
-
-        @Override
-        public void afterTextChanged(Editable s) {
-
-        }
-    };
+//    private TextWatcher emptyTextWatcher = new TextWatcher() {
+//        @Override
+//        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//
+//        }
+//
+//        @Override
+//        public void onTextChanged(CharSequence s, int start, int before, int count) {
+//            String name = etName.getText().toString().trim();
+//            String email = etEmail.getText().toString().trim();
+//            btnNext.setEnabled(!name.isEmpty() && !email.isEmpty());
+//
+//
+//
+//        }
+//
+//        @Override
+//        public void afterTextChanged(Editable s) {
+//
+//        }
+//    };
 }
 

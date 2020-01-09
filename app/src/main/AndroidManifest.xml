@@ -12,17 +12,18 @@
         <activity android:name=".ConnectActivity"></activity>
         <activity android:name=".DescribeActivity" />
         <activity android:name=".ProfilePicture" />
-        <activity android:name=".PasswordActivity" />
+        <!--<activity android:name=".PasswordActivity" /> -->
         <activity android:name=".CodeActivity" />
-        <activity android:name=".SignUpConfirm" />
-        <activity android:name=".HelpCenterACtivity" /> <!-- <activity android:name=".SignUpActivity"></activity> -->
-        <!-- <activity android:name=".LoginActivity"></activity> -->
+       <activity android:name=".SignUpConfirm"/>
+        <activity android:name=".HelpCenterACtivity" />
+        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
         <activity android:name=".FirstActivity" />
         <activity
             android:name=".DashBoardActivity"
             android:label="@string/title_activity_dash_board"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SignUpActivity">
+        <activity android:name=".PasswordActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
