@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvLabel8">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etName"
+            android:id="@+id/etName2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name" />
@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tiName">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etEmail"
+            android:id="@+id/etEmail2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone number or email address" />

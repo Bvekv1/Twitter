@@ -30,6 +30,8 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SignUpActivity.this,SignUpConfirm.class);
+                intent.putExtra("Name",etName.getText().toString());
+                intent.putExtra("Email",etEmail.getText().toString());
                  startActivity(intent);
             }
         });
