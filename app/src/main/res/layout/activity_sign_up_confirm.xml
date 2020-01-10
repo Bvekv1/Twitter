@@ -25,20 +25,22 @@
         android:layout_height="32dp"
         android:layout_marginTop="52dp"
         android:text="Create your acoount"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tiName"
-        android:layout_width="333dp"
+        android:layout_width="372dp"
         android:layout_height="72dp"
         android:layout_marginTop="56dp"
         app:counterEnabled="true"
         app:counterMaxLength="50"
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvLabel8">
 
@@ -49,11 +51,10 @@
             android:hint="Name" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tiEmail"
-        android:layout_width="332dp"
-        android:layout_height="57dp"
+        android:layout_width="371dp"
+        android:layout_height="61dp"
         android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -71,13 +72,14 @@
         android:id="@+id/btnSignUpA"
         android:layout_width="82dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="80dp"
         android:text="Sign Up"
+        android:textColor="#fff"
+        android:background="@drawable/shaperound"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
@@ -95,14 +97,16 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="317dp"
-        android:layout_height="91dp"
+        android:layout_width="367dp"
+        android:layout_height="180dp"
         android:layout_marginTop="48dp"
         android:text="By signing up, you agree to the Terms of Services and Privacy Policy, including Cookie Use. Others will be able to find you by email or phone number when provided. Privacy Options"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tiEmail"
-        app:layout_constraintVertical_bias="0.057" />
+        app:layout_constraintVertical_bias="0.103" />
 </androidx.constraintlayout.widget.ConstraintLayout>
